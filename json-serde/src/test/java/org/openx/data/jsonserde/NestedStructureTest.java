@@ -72,7 +72,7 @@ public class NestedStructureTest {
     StructObjectInspector soi = (StructObjectInspector) instance.getObjectInspector();
     
     assertEquals("youtube#videoListResponse", soi.getStructFieldData(result, soi.getStructFieldRef("kind")));
-    assertEquals("\"79S54kzisD_9SOTfQLu_0TVQSpY/mYlS4-ghMGhc1wTFCwoQl3IYDZc\""
+    assertEquals("\\\"79S54kzisD_9SOTfQLu_0TVQSpY/mYlS4-ghMGhc1wTFCwoQl3IYDZc\\\""
                 , soi.getStructFieldData(result, soi.getStructFieldRef("etag")));
     
     // now, the trickier fields. pageInfo
